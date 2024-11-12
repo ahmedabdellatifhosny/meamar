@@ -1,0 +1,39 @@
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+  width: 101%;
+  height: 100%;
+}
+.loader .loader-icon {
+  background: #000;
+  height: 100%;
+  width: 100%;
+  transition: all ease-in-out 1s;
+}
+.loader img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-60%, -60%);
+  animation: loading alternate 2s linear infinite;
+}
+@keyframes loading {
+  0% {
+    opacity: 0.3;
+  }
+  25% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+}/*# sourceMappingURL=loader.css.map */

@@ -1,0 +1,58 @@
+.about {
+  padding: 100px 0;
+  text-transform: capitalize;
+}
+.about .swp img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+.about .swp .big-slider img {
+  border-radius: 10px;
+}
+.about .swp .big-slider .swiper-button-next {
+  color: #efb36a;
+}
+.about .swp .big-slider .swiper-button-prev::after {
+  color: #efb36a;
+}
+.about .swp .small-pic {
+  margin-top: 20px;
+}
+.about .swp .small-pic .swiper-backface-hidden .swiper-slide {
+  width: 100%;
+  margin-right: 0;
+  border: 5px solid #efb36a;
+  border-radius: 10px;
+}
+.about .about-info {
+  margin-right: 15px;
+}
+.about .about-info .title {
+  margin-bottom: 30px;
+}
+.about .about-info .title h2 {
+  background: linear-gradient(to right, #dc8317 0%, #fff 100%) text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+}
+.about .about-info .title small {
+  color: #ccc;
+}
+.about .about-info p {
+  line-height: 1.7;
+  color: #ccc;
+}
+.about .about-info .btn-outline-warning {
+  width: 200px;
+  text-transform: capitalize;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  color: #efb36a;
+  padding: 10px 0;
+  border-radius: 0;
+}
+.about .about-info .btn-outline-warning:hover {
+  color: white;
+}/*# sourceMappingURL=about.css.map */

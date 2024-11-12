@@ -1,0 +1,101 @@
+@charset "UTF-8";
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* اجعل قسم Hero يحتل كامل ارتفاع الشاشة */
+  position: relative;
+  overflow: hidden;
+}
+.hero .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+.hero .info-header {
+  color: #fff;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px 40px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: relative;
+  top: 30%;
+}
+.hero .info-header:after {
+  content: "";
+  position: absolute;
+  background-color: #efb36a;
+  width: 3px;
+  height: 100%;
+  top: 0;
+  right: -16%;
+  z-index: 2;
+}
+.hero .info-header .details {
+  display: flex;
+  gap: 11px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all ease-in-out 0.5s;
+}
+.hero .info-header .details:hover {
+  color: #efb36a;
+}
+.hero .info-header .details .fa-phone,
+.hero .info-header .details .fa-address-book,
+.hero .info-header .details .fa-clock {
+  color: #efb36a;
+}
+.hero .info-header .details p {
+  margin-bottom: 0;
+}
+.hero .info-header .fa-facebook,
+.hero .info-header .fa-linkedin,
+.hero .info-header .fa-square-instagram,
+.hero .info-header .fa-youtube,
+.hero .info-header .fa-tiktok {
+  font-size: 30px;
+  color: #dcc8b0;
+  transition: all ease-in-out 0.5s;
+}
+.hero .info-header .fa-facebook:hover,
+.hero .info-header .fa-linkedin:hover,
+.hero .info-header .fa-square-instagram:hover,
+.hero .info-header .fa-youtube:hover,
+.hero .info-header .fa-tiktok:hover {
+  color: #efb36a;
+  transform: scale(1.1);
+}
+
+.branding {
+  position: relative;
+  z-index: 2;
+}
+.branding img {
+  margin-top: 10px;
+}
+
+video {
+  width: 100%;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover; /* يجعل الفيديو يغطي القسم بأكمله */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* خلف المحتوى */
+}
+
+@media screen and (max-width: 767px) {
+  .hero img {
+    display: none;
+  }
+  .hero .info-header::after {
+    display: none;
+  }
+}/*# sourceMappingURL=hero.css.map */

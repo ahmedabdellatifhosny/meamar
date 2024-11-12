@@ -1,0 +1,34 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: 110px;
+  z-index: 1024;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+}
+.navbar .navbar-nav .nav-link {
+  margin: 0 10px;
+  font-weight: 500;
+  color: #fff;
+}
+.navbar .navbar-nav .nav-link:hover {
+  color: #EFB36A;
+}
+.navbar .navbar-nav .nav-link:active {
+  color: #222;
+}
+.navbar .navbar-nav .active {
+  color: #EFB36A;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    height: auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.99px) {
+  .navbar {
+    height: auto;
+  }
+}/*# sourceMappingURL=menu.css.map */

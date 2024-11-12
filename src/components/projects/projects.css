@@ -1,0 +1,59 @@
+.Projects {
+  padding: 100px 0;
+  color: aliceblue;
+}
+.Projects h2 {
+  background: linear-gradient(to right, #dc8317 0%, #fff 100%) text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+  font-weight: bold;
+}
+.Projects small {
+  color: #ccc;
+}
+.Projects .box {
+  overflow: hidden;
+}
+.Projects .box img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin: auto;
+  cursor: pointer;
+  filter: blur(1);
+  transition: 0.5s ease-in-out;
+}
+.Projects .box img:hover {
+  filter: blur(0);
+}
+.Projects .box .details {
+  width: 350px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.15);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(13.9px);
+  -webkit-backdrop-filter: blur(13.9px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+  text-transform: capitalize;
+}
+.Projects .box .details h4 {
+  background: linear-gradient(to right, #dc8317 0%, #fff 100%) text;
+  -webkit-text-fill-color: transparent;
+  font-size: 22px;
+  font-weight: bold;
+  padding: 10px;
+}
+.Projects .box .details a {
+  text-decoration: none;
+  background: linear-gradient(to right, #dc8317 0%, #fff 100%) text;
+  -webkit-text-fill-color: transparent;
+  padding: 10px;
+}/*# sourceMappingURL=projects.css.map */

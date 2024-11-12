@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  scroll-behavior: smooth !important;
+  background: #000 !important;
+  color: #fff !important;
+}/*# sourceMappingURL=globals.css.map */
